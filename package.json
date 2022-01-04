@@ -1,0 +1,38 @@
+{
+  "name": "brazuka-zap",
+  "version": "0.0.12",
+  "description": "Provides an API to send bulk messages via WhatsApp based on Venom Bot",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "dev": "nodemon --watch \"src//\" --exec \"ts-node src/index.ts\" -e ts",
+    "start": "npm run build && npm run dev"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-library",
+    "whatsapp-sender",
+    "whatsapp-send-message",
+    "whatsapp-api",
+    "free-whatsapp-api",
+    "free-api",
+    "venom-bot",
+    "whatsapp-business",
+    "send-message"
+  ],
+  "author": "Himanshu Maurya",
+  "license": "MIT",
+
+  "dependencies": {
+    "brazuka-formatter": "^0.0.4",
+    "spinnies": "^0.5.1",
+    "venom-bot": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.7",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
